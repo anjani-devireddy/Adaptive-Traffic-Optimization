@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptive Traffic Optimization</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header>
+    <h1>Adaptive Traffic Optimization</h1>
+    <p>Live AI Traffic Monitoring</p>
+    <div id="status">SYSTEM ACTIVE</div>
+</header>
+
+<main>
+
+    <section>
+        <h2>CCTV Monitoring</h2>
+
+        <div id="cameras" class="camera-grid">
+
+            <div class="camera-card" data-camera-id="0">
+                <h3>Camera 0 — North</h3>
+
+                <img src="/cctv/0" alt="Camera 0">
+
+                <p>
+                    Vehicles:
+                    <strong class="vehicle-count">0</strong>
+                </p>
+
+                <p>
+                    Traffic Score:
+                    <strong class="traffic-score">0</strong>
+                </p>
+
+                <p>
+                    Density:
+                    <strong class="density">0</strong>
+                </p>
+
+                <p>
+                    Green Time:
+                    <strong class="green-time">0s</strong>
+                </p>
+
+                <p>
+                    Signal:
+                    <strong class="signal">Red</strong>
+                </p>
+            </div>
+
+
+            <div class="camera-card" data-camera-id="1">
+                <h3>Camera 1 — East</h3>
+
+                <img src="/cctv/1" alt="Camera 1">
+
+                <p>
+                    Vehicles:
+                    <strong class="vehicle-count">0</strong>
+                </p>
+
+                <p>
+                    Traffic Score:
+                    <strong class="traffic-score">0</strong>
+                </p>
+
+                <p>
+                    Density:
+                    <strong class="density">0</strong>
+                </p>
+
+                <p>
+                    Green Time:
+                    <strong class="green-time">0s</strong>
+                </p>
+
+                <p>
+                    Signal:
+                    <strong class="signal">Red</strong>
+                </p>
+            </div>
+
+
+            <div class="camera-card" data-camera-id="2">
+                <h3>Camera 2 — South</h3>
+
+                <img src="/cctv/2" alt="Camera 2">
+
+                <p>
+                    Vehicles:
+                    <strong class="vehicle-count">0</strong>
+                </p>
+
+                <p>
+                    Traffic Score:
+                    <strong class="traffic-score">0</strong>
+                </p>
+
+                <p>
+                    Density:
+                    <strong class="density">0</strong>
+                </p>
+
+                <p>
+                    Green Time:
+                    <strong class="green-time">0s</strong>
+                </p>
+
+                <p>
+                    Signal:
+                    <strong class="signal">Red</strong>
+                </p>
+            </div>
+
+
+            <div class="camera-card" data-camera-id="3">
+                <h3>Camera 3 — West</h3>
+
+                <img src="/cctv/3" alt="Camera 3">
+
+                <p>
+                    Vehicles:
+                    <strong class="vehicle-count">0</strong>
+                </p>
+
+                <p>
+                    Traffic Score:
+                    <strong class="traffic-score">0</strong>
+                </p>
+
+                <p>
+                    Density:
+                    <strong class="density">0</strong>
+                </p>
+
+                <p>
+                    Green Time:
+                    <strong class="green-time">0s</strong>
+                </p>
+
+                <p>
+                    Signal:
+                    <strong class="signal">Red</strong>
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="overview">
+
+        <h2>Traffic Overview</h2>
+
+        <div class="overview-grid">
+
+            <div>
+                <h3>Total Vehicles</h3>
+                <strong id="total-vehicles">0</strong>
+            </div>
+
+            <div>
+                <h3>Total Traffic Score</h3>
+                <strong id="total-score">0</strong>
+            </div>
+
+            <div>
+                <h3>Highest Traffic</h3>
+                <strong id="highest-traffic">--</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<script src="{{ url_for('static', filename='dashboard.js') }}"></script>
+
+</body>
+</html>
