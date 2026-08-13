@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# Local database
+data/*.db
+
+# Large video files
+*.mp4
+*.avi
+*.mov
+
+# YOLO generated files
+runs/
+results/
